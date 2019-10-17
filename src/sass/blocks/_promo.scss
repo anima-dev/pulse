@@ -1,0 +1,57 @@
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px;
+    background: url('../../img/running.jpg') center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 91px;
+    }
+    &__header {
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    &__subheader {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    &__icons {
+        margin-top: 67px;
+        width: 424px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 108px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        img {
+            margin: 0 auto 20px;
+            display: block;
+        }
+    }
+    &__link {
+        margin-top: 18px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        a {
+            color: #ffffff;
+            text-transform: uppercase;
+            text-decoration: underline;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
