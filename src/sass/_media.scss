@@ -45,6 +45,11 @@
             margin-top: 15px;
         }
     }
+    .carousel {
+        &__inner {
+            width: 550px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -58,15 +63,6 @@
         }
         &__official {
             order: 3;
-            /* flex-direction: row;
-            justify-content: center;
-            font-size: 10px;
-            margin: 0 auto;
-            margin-top: 20px;
-            span {
-                margin-left: 10px;
-                font-size: 14px;
-            } */
         }
     }
     .promo {
