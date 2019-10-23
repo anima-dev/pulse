@@ -5,6 +5,12 @@
     .advantages__item {
         width: 230px;
     }
+    .carousel__inner {
+        width: 571px;
+    }
+    .catalog__content {
+        max-width: 630px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -47,7 +53,18 @@
     }
     .carousel {
         &__inner {
-            width: 550px;
+            max-width: 510px;
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 160px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 39px;
+        }
+        &__content {
+            max-width: 315px;
         }
     }
 }
@@ -94,5 +111,29 @@
     .consultation__descr {
         margin-top: 40px;
         font-size: 16px;
+    }
+    .carousel {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__inner {
+            max-width: 310px;
+        }
+    }
+    .catalog {
+        .title {
+            font-size: 22px;
+        }
+        &__tabs {
+            margin-top: 30px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__tab {
+            width: 230px;
+            margin: 5px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
     }
 }
