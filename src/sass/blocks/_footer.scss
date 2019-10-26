@@ -1,8 +1,9 @@
 .footer {
     position: relative;
     height: 630px;
-    .footer__contacts {
+    &__contacts {
         position: absolute;
+        z-index: 1;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -11,7 +12,7 @@
         background-color: $m-color;
         padding: 50px 68px 60px;
     }
-    .footer__address {
+    &__address {
         display: block;
         color: #ffffff;
         font-size: 20px;
@@ -19,7 +20,7 @@
         text-align: center;
         line-height: 20px;
     }
-    .footer__phone {
+    &__phone {
         display: block;
         margin-top: 36px;
         color: #ffffff;
@@ -31,7 +32,7 @@
             color: #ffffff;
         }
     }
-    .footer__social {
+    &__social {
         margin: 0 auto;
         margin-top: 38px;
         width: 210px;
