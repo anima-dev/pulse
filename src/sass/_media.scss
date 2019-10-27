@@ -126,6 +126,12 @@
         margin-top: 40px;
         font-size: 16px;
     }
+    .contact-form {
+        width: 260px;
+        .button_submit {
+            width: 260px;
+        }
+    }
     .carousel {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -174,5 +180,13 @@
     }
     .footer__address {
         font-size: 14px;
+    }
+    .modal {
+        width: 310px;
+        padding: 38px 25px 40px;
+        &__close {
+            top: 3px;
+            right: 3px;
+        }
     }
 }
