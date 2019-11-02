@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>RunSmart</title>
 </head>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -62,7 +63,7 @@
                         Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/heart.png" alt="health">
+                    <img src="icons/heart.png" class="advantages__heart_animated" alt="health">
                     <h3 class="advantages__header">Заботимся о здоровье</h3>
                     <div class="advantages__text">
                         Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -85,15 +86,15 @@
             <div class="consultation__descr">
                 Просто заполните форму заявки и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="#" class="contact-form contact-form_main">
-                <input required name="name" placeholder="Ваше имя" type="text">
-                <input required name="phone" placeholder="Ваш телефон" type="tel">
-                <input required name="email" placeholder="Ваш E-mail" type="email">
+            <form id="consultation-form" action="#" class="contact-form contact-form_main">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -107,7 +108,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -511,9 +512,9 @@
     </section>
     <section class="reviews">
         <div class="container">
-            <div class="title">отзывы клиентов</div>
+            <h2 class="title">отзывы клиентов</h2>
             <div class="reviews__wrapper">
-                <div class="reviews__item reviews__item_mb">
+                <div class="reviews__item reviews__item_mb wow slideInUp">
                     <img src="img/reviews/iren.png" alt="irina" class="reviews__img">
                     <div class="reviews__details">
                         <div class="reviews__name">Ирина Иванченко</div>
@@ -531,7 +532,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__item reviews__item_mb">
+                <div class="reviews__item reviews__item_mb wow slideInUp">
                     <img src="img/reviews/ivan.png" alt="ivan" class="reviews__img">
                     <div class="reviews__details">
                         <div class="reviews__name">Иван Сёмочкин</div>
@@ -548,7 +549,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item wow slideInUp">
                     <img src="img/reviews/julie.jpg" alt="yulya" class="reviews__img">
                     <div class="reviews__details">
                         <div class="reviews__name">Юлия Дашкина</div>
@@ -579,7 +580,7 @@
                 <div class="footer__social-item"><img src="icons/pin.png" alt="pinterest"></div>
             </div>
         </div>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12f2c20859b900a0abed461487a8db6273d1e50b3e8a560ddd12c31eeeb4995a&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12f2c20859b900a0abed461487a8db6273d1e50b3e8a560ddd12c31eeeb4995a&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
     </footer>
 
     <div class="overlay">
@@ -589,7 +590,7 @@
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form action="#" class="contact-form contact-form_modal">
                 <input required name="name" placeholder="Ваше имя" type="text">
-                <input required name="phone" placeholder="Ваш телефон" type="tel">
+                <input required name="phone" placeholder="Ваш телефон">
                 <input required name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -615,9 +616,16 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup"><img src="icons/chevron-circle-up-solid.svg" alt="page up"></a>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
     <script src="js/script.js"></script>
 
 </body>
